@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects | Abhishek Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #1f1f1f;
+    }
+
+    header p {
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 1200px;
+      padding-bottom: 3rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem 1.2rem;
+    }
+
+    .project-content h3 {
+      font-size: 1.2rem;
+      color: #111;
+      margin-bottom: 8px;
+    }
+
+    .project-content p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #4f46e5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #3730a3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .project-content h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Projects</h1>
+    <p>A collection of my web development projects — click below to explore!</p>
+  </header>
+
+  <section class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="portfolio.png" alt="Project 1" class="project-image">
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website built with HTML, CSS, and JavaScript, showcasing my skills, projects, and achievements. It provides an interactive and visually appealing way to present my work.</p>
+        <a href="#" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="shopme.png" alt="Project 2" class="project-image">
+      <div class="project-content">
+        <h3>React E-Commerce</h3>
+        <p>A fully responsive E-Commerce web application built to showcase frontend skills, featuring dynamic product listings, smooth navigation, and an engaging user interface. It highlights modern web design and interactive UI components.</p>
+        <a href="https://shopme-react.netlify.app/" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="worldatlas.png" alt="Project 3" class="project-image">
+      <div class="project-content">
+        <h3>world atles</h3>
+        <p>A responsive World Atlas React app that displays country details using the REST Countries API with dynamic search and region-based filters.
+Built using React Hooks like useState, useEffect etc. for efficient state and data management.
+Features a clean, interactive UI for exploring global information seamlessly.</p>
+        <a href="https://github.com/iabhishek12/my-atlas" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+
+     <div class="project-card">
+      <img src="https://picsum.photos/400/250?random=3" alt="Project 3" class="project-image">
+      <div class="project-content">
+        <h3>Employee management system</h3>
+        <p>A React-based Employee Management System that allows users to create, read, update, and delete (CRUD) employee records. It provides an interactive interface for efficiently managing employee data with login authentication and real otp varification and Athentication</p>
+        <a href="https://github.com/iabhishek12/Employee-Management-system" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Abhishek Singh — All Rights Reserved
+  </footer>
+
+</body>
+</html>
